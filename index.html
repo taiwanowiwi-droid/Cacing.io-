@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake Worms - Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div class="hud">
+  <div class="panel"><div class="brand">SNAKE <span>WORMS</span></div><div class="sub">ARENA • OFFLINE MODE</div></div>
+  <div class="panel stats">
+    <div class="stat"><b id="score">0</b><small>Skor</small></div>
+    <div class="stat"><b id="length">10</b><small>Panjang</small></div>
+    <div class="stat"><b id="best">0</b><small>Rekor</small></div>
+  </div>
+</div>
+<div class="actions">
+  <button id="pauseBtn">Ⅱ Jeda</button>
+  <button id="soundBtn">♫ Suara: Mati</button>
+</div>
+<div id="joystick"><div id="stick"></div></div>
+<button id="boost">BOOST</button>
+<div class="toast" id="toast">Arahkan mouse / sentuh layar untuk bergerak</div>
+<div class="overlay" id="startScreen">
+  <div class="dialog">
+    <div class="logo">🐍</div>
+    <h1>Snake Worms</h1>
+    <p>Kumpulkan makanan, besarkan cacingmu, dan hindari kepala cacing lain. Raih skor tertinggi di arena!</p>
+    <div class="rowbtn"><button class="primary" id="startBtn">MULAI BERMAIN</button></div>
+    <div class="help">PC: gerakkan mouse untuk mengarahkan • Tahan klik / spasi untuk boost<br>HP: geser joystick kiri • Tahan tombol BOOST<br><br>Game ini berjalan offline melawan bot komputer.</div>
+  </div>
+</div>
+<div class="overlay hidden" id="overScreen">
+  <div class="dialog">
+    <div class="logo">💫</div>
+    <h1>Permainan Selesai</h1>
+    <p>Skor kamu: <b id="finalScore">0</b><br>Rekor terbaik: <b id="finalBest">0</b></p>
+    <div class="rowbtn"><button class="primary" id="restartBtn">MAIN LAGI</button><button id="homeBtn">MENU</button></div>
+  </div>
+</div>
+<div class="overlay hidden" id="pauseScreen">
+  <div class="dialog"><div class="logo">⏸️</div><h1>Game Dijeda</h1><p>Tarik napas sebentar. Arena menunggu kamu.</p><div class="rowbtn"><button class="primary" id="resumeBtn">LANJUTKAN</button><button id="pauseHomeBtn">MENU</button></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

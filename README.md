@@ -1,29 +1,15 @@
-# Cacing.io 🐛
+# 🐍 Snake Worms
 
-Game cacing arena single player, **bisa dimainkan offline** tanpa internet dan tanpa library.
-Dibuat dengan HTML5 Canvas + JavaScript murni. Semua desain dan kode orisinal.
+Game cacing arena (mirip slither.io) yang berjalan offline di browser melawan bot komputer.
 
-## Cara main
-- **Mouse / sentuh layar**: arahkan cacing
-- **Klik tahan / Spasi / tombol ⚡**: boost (memakai panjang badan)
-- Makan titik warna untuk memanjang
-- Tabrak badan cacing lain atau batas arena = mati, lalu badanmu jadi makanan
+## Cara Main
+- **PC:** gerakkan mouse untuk mengarahkan, tahan klik / spasi untuk boost.
+- **HP:** geser joystick kiri, tahan tombol BOOST.
 
-## Menjalankan offline
-Unduh folder ini, lalu buka `index.html` di browser (klik dua kali). Selesai.
+## Struktur File
+- `index.html` — struktur halaman
+- `style.css` — tampilan
+- `script.js` — logika game
 
-## Hosting di GitHub Pages
-1. Upload semua file ke repository
-2. Buka **Settings → Pages**
-3. Source: **Deploy from a branch**, pilih `main` dan folder `/ (root)`
-4. Game online di `https://USERNAME.github.io/NAMA-REPO/`
-
-## Struktur
-```
-index.html   halaman utama
-style.css    tampilan menu dan HUD
-game.js      seluruh logika game
-```
-
-## Lisensi
-MIT
+## Menjalankan
+Buka `index.html` di browser. Untuk GitHub Pages: Settings → Pages → pilih branch `main` dan folder `/ (root)`.
